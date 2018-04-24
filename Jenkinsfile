@@ -1,5 +1,5 @@
 pipeline {
-    agent any
+    agent { docker { image 'themattrix/tox' } }
     stages {
         stage('Build') {
             steps {
