@@ -5,7 +5,7 @@ pipeline {
             steps {
                 sh 'echo "Pipeline started"'
                 sh '''
-                    export PATH=$PATH:~/.local/bin/
+                    sudo apt-get install python3-setuptools & sudo easy_install3 pip
                     echo "Installing tox"
                     pip install tox
                     echo "Running tox"
